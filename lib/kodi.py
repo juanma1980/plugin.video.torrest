@@ -18,7 +18,7 @@ ADDON_NAME = ADDON.getAddonInfo("name")
 ADDON_ID = ADDON.getAddonInfo("id")
 ADDON_PATH = assure_unicode(ADDON.getAddonInfo("path"))
 ADDON_ICON = assure_unicode(ADDON.getAddonInfo("icon"))
-ADDON_DATA = assure_unicode(xbmc.translatePath(ADDON.getAddonInfo("profile")))
+ADDON_DATA = assure_unicode(xbmcvfs.translatePath(ADDON.getAddonInfo("profile")))
 
 set_setting = ADDON.setSetting
 get_setting = ADDON.getSetting

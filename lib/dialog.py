@@ -1,4 +1,4 @@
-from xbmc import translatePath
+from xbmcvfs import translatePath
 from xbmcgui import Dialog, WindowXMLDialog, ACTION_PARENT_DIR, ACTION_NAV_BACK, ACTION_PREVIOUS_MENU
 
 from lib.kodi import ADDON_NAME, translate
